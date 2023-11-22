@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Ejemplo Diplomado Modulo Web</title>
+</head>
+<body>
+<h2>
+<font color="blue">Ejemplo pagina HTML con Formulario</font>
+</h2>
+
+<hr color="green" size="2" />
+<form action="ProcesarFormulario.html">
+
+<fieldset>
+<legend>Text</legend>
+<label>Ruc: <input type="text" name="ruc" id="ruc" value="8007700" readonly="readonly" /></label><br />
+<label>Razon Social: <input type="text" name="razonSocial" id="razonSocial" size="50" maxlength="80" /></label><br />
+<label>Password: <input type="password" name="pass" id="pass" size="20" maxlength="15" /></label><br />
+</fieldset>
+
+<fieldset>
+<legend>Comentarios</legend>
+<textarea cols="20" rows="3" name="com">Comentario..</textarea>
+</fieldset>
+
+<label>Persona Juridica: <input type="checkbox" name="personaJuridica" id="personaJuridica" checked="checked" /></label> 
+<label>Gran contribuyente: <input type="checkbox" name="granContribuyente" id="granContribuyente" disabled="disabled" /></label>
+<br />
+
+<label>
+sexo:
+<select name="sexo" id="sexo">
+<option value="F">Femenino</option>
+<option value="M">Masculino</option>
+</select>
+</label>
+<br />
+<label>
+Actividad(es) Economica(s):<br />
+<select name="actividadEconomica" id="actividadEconomica" multiple="multiple">
+<option value="1">Informatica</option>
+<option value="2">Contabilidad</option>
+<option value="3">Marketing</option>
+</select>
+
+</label>
+<br />
+Tipo IVA<br />
+<label>Iva10%: <input type="radio" name="tipoIva" id="tipoIva" value="1" /></label>
+<label>Iva5%: <input type="radio" name="tipoIva" id="tipoIva" value="2" /></label>
+
+<input type="hidden" name="id" id="id" value="15" readonly="readonly"/>
+
+
+<p>
+<input type="reset" name="rest" value="Reset" />
+<input type="submit" name="btSubmit" value="Aceptar" /> 
+<input type="submit" name="btSubmit" value="Canceltar" />
+</p>
+
+</form>
+
+
+
+</body>
+</html>
